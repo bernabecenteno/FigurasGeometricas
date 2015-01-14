@@ -1,0 +1,60 @@
+/*
+ * To change this license header, choose License Headers in Project Properties.
+ * To change this template file, choose Tools | Templates
+ * and open the template in the editor.
+ */
+package figuras;
+
+import java.awt.Color;
+
+/**
+ *
+ * @author BernabéAlejandro
+ */
+public class Triangulo extends FigurasGeometricas {
+    /**
+     * Definición de atributos del cuadrado
+     */
+    int a;
+    int p;
+    int coordenadax1;
+    int coordenaday1;
+    int coordenadax2;
+    int coordenaday2;
+    int coordenadax3;
+    int coordenaday3;
+    int lado1 = (int) Math.sqrt(((coordenadax1-coordenadax2)*(coordenadax1-coordenadax2)+
+            (coordenaday1-coordenaday2)*(coordenaday1-coordenaday2)));
+    int lado2 = (int) Math.sqrt(((coordenadax1-coordenadax2)*(coordenadax1-coordenadax2)+
+            (coordenaday1-coordenaday2)*(coordenaday1-coordenaday2)));
+    int lado3 = (int) Math.sqrt(((coordenadax1-coordenadax2)*(coordenadax1-coordenadax2)+
+            (coordenaday1-coordenaday2)*(coordenaday1-coordenaday2)));
+    
+    public Triangulo (String nombre) {
+        super(nombre);
+    }
+   
+    /**
+     * Implementación de los métodos abstractos
+     */
+    @Override
+    public void Area() {
+        //throw new UnsupportedOperationException("Not supported yet."); //To change body of generated methods, choose Tools | Templates.
+        a = (int) Math.sqrt(((p/2)*((p/2)-lado1)*((p/2)-lado2)*((p/2)-lado3)));
+    }
+
+    @Override
+    public void Perimetro() {
+        //throw new UnsupportedOperationException("Not supported yet."); //To change body of generated methods, choose Tools | Templates.
+        p = (int) (lado1 + lado2 + lado3);
+    }    
+
+    @Override
+    public void Grafico() {
+        //throw new UnsupportedOperationException("Not supported yet."); //To change body of generated methods, choose Tools | Templates.
+        //super.paintComponent(g);
+        this.setBackground(Color.black);
+        //g.setColor(Color.blue);
+        //g.drawRect(coordenadax, coordenaday, lado, lado);
+    }
+}
