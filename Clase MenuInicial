@@ -1,0 +1,100 @@
+/*
+ * To change this license header, choose License Headers in Project Properties.
+ * To change this template file, choose Tools | Templates
+ * and open the template in the editor.
+ */
+package figuras;
+
+import java.util.Scanner;
+import javax.swing.JFrame;
+
+/**
+ *
+ * @author BernabéAlejandro
+ */
+public class MenuInicial {
+    public static void main (String [] args) {
+        Scanner teclado;
+        //JFrame marco;
+        /*Cuadrado c1 = new Cuadrado("Cuadrado1");
+        System.out.println("Ingrese la coordenada en X del vértice del cuadrado:");
+        teclado = new Scanner(System.in);
+        c1.coordenadax = teclado.nextInt();
+        System.out.println("Ingrese la coordenada en Y del vértice del cuadrado:");
+        teclado = new Scanner(System.in);
+        c1.coordenaday = teclado.nextInt();
+        System.out.println("Ingrese el lado del cuadrado:");
+        teclado = new Scanner(System.in);
+        c1.lado = teclado.nextInt();
+        c1.Grafico();
+        c1.Area();
+        c1.Perimetro();
+        System.out.println("El área del cuadrado es:" + "\t" + c1.a);
+        System.out.println("El perímetro del cuadrado es:" + "\t" + c1.p);*/
+        /*marco = new JFrame("Dibujo de la Figura");
+        marco.setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE);
+        marco.add(c1);
+        marco.setSize(2*c1.coordenadax, 2*c1.coordenaday);
+        marco.setVisible(true);*/
+        /*Rectangulo r1 = new Rectangulo("Rectangulo1");
+        System.out.println("Ingrese la coordenada en X del vértice del Rectangulo:");
+        teclado = new Scanner(System.in);
+        r1.coordenadax = teclado.nextInt();
+        System.out.println("Ingrese la coordenada en Y del vértice del Rectangulo:");
+        teclado = new Scanner(System.in);
+        r1.coordenaday = teclado.nextInt();
+        System.out.println("Ingrese el lado1 del Rectangulo:");
+        teclado = new Scanner(System.in);
+        r1.lado1 = teclado.nextInt();
+        System.out.println("Ingrese el lado2 del Rectangulo:");
+        teclado = new Scanner(System.in);
+        r1.lado2 = teclado.nextInt();
+        r1.Grafico();
+        r1.Area();
+        r1.Perimetro();
+        System.out.println("El área del rectángulo es:" + "\t" + r1.a);
+        System.out.println("El perímetro del rectángulo es:" + "\t" + r1.p);*/
+        /*Circulo ci1 = new Circulo("Circulo1");
+        System.out.println("Ingrese la coordenada en X del vértice del Círculo:");
+        teclado = new Scanner(System.in);
+        ci1.coordenadax = teclado.nextInt();
+        System.out.println("Ingrese la coordenada en Y del vértice del Círculo:");
+        teclado = new Scanner(System.in);
+        ci1.coordenaday = teclado.nextInt();
+        System.out.println("Ingrese el lado del Círculo:");
+        teclado = new Scanner(System.in);
+        ci1.lado = teclado.nextInt();
+        ci1.Grafico();
+        ci1.Area();
+        ci1.Perimetro();
+        System.out.println("El área del Círculo es:" + "\t" + ci1.a);
+        System.out.println("El perímetro del Círculo es:" + "\t" + ci1.p);*/
+        Triangulo t1 = new Triangulo("Triangulo1");
+        System.out.println("Ingrese la coordenada en X del vértice1 del Triangulo:");
+        teclado = new Scanner(System.in);
+        t1.coordenadax1 = teclado.nextInt();
+        System.out.println("Ingrese la coordenada en Y del vértice1 del Triangulo:");
+        teclado = new Scanner(System.in);
+        t1.coordenaday1 = teclado.nextInt();
+        System.out.println("Ingrese la coordenada en X del vértice2 del Triangulo:");
+        teclado = new Scanner(System.in);
+        t1.coordenadax2 = teclado.nextInt();
+        System.out.println("Ingrese la coordenada en Y del vértice2 del Triangulo:");
+        teclado = new Scanner(System.in);
+        t1.coordenaday2 = teclado.nextInt();
+        System.out.println("Ingrese la coordenada en X del vértice3 del Triangulo:");
+        teclado = new Scanner(System.in);
+        t1.coordenadax3 = teclado.nextInt();
+        System.out.println("Ingrese la coordenada en Y del vértice3 del Triangulo:");
+        teclado = new Scanner(System.in);
+        t1.coordenaday3 = teclado.nextInt();
+        t1.Grafico();
+        t1.Area();
+        t1.Perimetro();
+        System.out.println(t1.lado1+"\t");
+        System.out.println(t1.lado1+"\t");
+        System.out.println(t1.lado1+"\t");
+        System.out.println("El área del triángulo es:" + "\t" + t1.a);
+        System.out.println("El perímetro del triángulo es:" + "\t" + t1.p);
+    }
+}
