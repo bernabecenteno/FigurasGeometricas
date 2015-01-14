@@ -1,0 +1,51 @@
+/*
+ * To change this license header, choose License Headers in Project Properties.
+ * To change this template file, choose Tools | Templates
+ * and open the template in the editor.
+ */
+package figuras;
+
+import java.awt.Color;
+
+/**
+ *
+ * @author BernabéAlejandro
+ */
+public class Circulo extends FigurasGeometricas {
+    /**
+     * Definición de atributos del cuadrado
+     */
+    int a;
+    int p;
+    int coordenadax;
+    int coordenaday;
+    int lado;
+
+    public Circulo(String nombre) {
+        super(nombre);
+    }
+   
+    /**
+     * Implementación de los métodos abstractos
+     */
+    @Override
+    public void Area() {
+        //throw new UnsupportedOperationException("Not supported yet."); //To change body of generated methods, choose Tools | Templates.
+        a = (int) (Math.PI * (lado/4));
+    }
+
+    @Override
+    public void Perimetro() {
+        //throw new UnsupportedOperationException("Not supported yet."); //To change body of generated methods, choose Tools | Templates.
+        p = (int) (2 * Math.PI * (lado/2));
+    }    
+
+    @Override
+    public void Grafico() {
+        //throw new UnsupportedOperationException("Not supported yet."); //To change body of generated methods, choose Tools | Templates.
+        //super.paintComponent(g);
+        this.setBackground(Color.black);
+        //g.setColor(Color.blue);
+        //g.drawRect(coordenadax, coordenaday, lado, lado);
+    }
+}
